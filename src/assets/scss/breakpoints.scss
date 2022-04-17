@@ -1,0 +1,12 @@
+@mixin screenBreakpoint($breakpoint) {
+	@if $breakpoint == phone {
+		@media (max-width: $tablet) {
+			@content;
+		}
+	}
+	@if $breakpoint == desktop {
+		@media (min-width: $tablet) {
+			@content;
+		}
+	}
+}

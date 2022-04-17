@@ -1,0 +1,39 @@
+@import './assets/scss/variables.scss';
+@import './assets/scss/mixins';
+@import './assets/scss/breakpoints.scss';
+@import './assets/scss/colors.scss';
+
+* {
+	@include resetHtml;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Courier New', Courier, monospace;
+
+	@include screenBreakpoint(phone) {
+		background: rgb(255, 0, 0);
+	}
+	@include screenBreakpoint(desktop) {
+		background: rgb(0, 255, 136);
+	}
+}
+
+button {
+	all: unset;
+}
+
+li {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.container {
+	min-height: 100vh;
+}
