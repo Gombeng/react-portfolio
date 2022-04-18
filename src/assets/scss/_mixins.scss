@@ -18,10 +18,21 @@
 }
 
 @mixin cta {
-	background: $Yellow;
-	color: $Very-darkdesaturated-blue;
+	background: $Black;
+	color: $White;
 	padding: 1em 1.5em;
-	font-family: $font-primary;
-	border-radius: 10em;
+	// border-radius: 10em;
 	text-transform: uppercase;
+	cursor: pointer;
+
+	&:hover {
+		opacity: 0.7;
+	}
+}
+
+@mixin bgImage {
+	background-image: url('../images/bg-home.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 }
