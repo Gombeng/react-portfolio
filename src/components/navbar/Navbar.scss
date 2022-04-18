@@ -3,13 +3,17 @@
 @import '../../assets/scss/colors';
 @import '../../assets/scss/breakpoints';
 
+.navbar {
+	height: 10vh;
+}
+
 .logo {
 	position: absolute;
 	right: 36px;
-	top: 13px;
+	top: 3px;
 	font-family: $font-logo;
 	font-size: 3em;
-	font-weight: 800;
+	font-weight: 500;
 	color: $Black;
 }
 
@@ -36,7 +40,7 @@
 	width: 26px;
 	height: 20px;
 	left: 36px;
-	top: 36px;
+	top: 26px;
 }
 
 /* Color/shape of burger icon bars */
@@ -72,7 +76,7 @@
 /* General sidebar styles */
 .bm-menu {
 	background: #ffffff;
-	padding: 2.5em 1.5em 0;
+	padding: 2.5em 0;
 	font-size: 1.15em;
 }
 

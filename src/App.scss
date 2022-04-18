@@ -19,11 +19,23 @@ html {
 body {
 	font-family: $font-body;
 	font-size: 16px;
-	// text-align: center;
+}
 
-	@include screenBreakpoint(desktop) {
-		text-align: left;
+.container {
+	min-height: 90vh;
+	@include flexBoxCol;
+	justify-content: center;
+	padding: 0 10vw;
+
+	@include screenBreakpoint(phone) {
+		text-align: center;
 	}
+}
+
+// element
+
+img {
+	width: 100%;
 }
 
 button {
@@ -40,8 +52,21 @@ a {
 	text-decoration: none;
 }
 
-.container {
-	min-height: 100vh;
-	@include flexBoxCol;
-	justify-content: center;
+// font
+h1 {
+	font-size: 1.8em;
+}
+
+h2 {
+	font-size: 1.6em;
+}
+
+h3 {
+	font-size: 1.4em;
+}
+
+p {
+	@include screenBreakpoint(desktop) {
+		font-size: 1.2em;
+	}
 }

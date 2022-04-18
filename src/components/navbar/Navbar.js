@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './Navbar.scss';
-import { push as Menu } from 'react-burger-menu';
+import { slide as Menu } from 'react-burger-menu';
 import { Link } from 'react-router-dom';
 
 export default class Navbar extends Component {
