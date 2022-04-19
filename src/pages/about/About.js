@@ -11,7 +11,7 @@ export default function About() {
 
 	return (
 		<div id="about" className="container about">
-			<div className="card">
+			<div>
 				<div className="img">
 					<img src="./images/profil.png" alt="My Profile" />
 				</div>

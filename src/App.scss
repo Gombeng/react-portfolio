@@ -25,10 +25,10 @@ body {
 	min-height: 90vh;
 	@include flexBoxCol;
 	justify-content: center;
-	padding: 0 10vw;
+	padding: 5vh 10vw;
 
 	@include screenBreakpoint(phone) {
-		text-align: center;
+		// text-align: center;
 	}
 }
 
@@ -38,7 +38,8 @@ img {
 	width: 100%;
 }
 
-button {
+button,
+.button {
 	all: unset;
 	@include cta;
 	transition: $halfSec;
@@ -69,4 +70,9 @@ p {
 	@include screenBreakpoint(desktop) {
 		font-size: 1.2em;
 	}
+}
+
+// margin
+.title {
+	margin-bottom: 1em;
 }
