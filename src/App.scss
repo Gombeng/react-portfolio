@@ -59,17 +59,11 @@ h1 {
 }
 
 h2 {
-	font-size: 1.6em;
+	font-size: 1.5em;
 }
 
 h3 {
-	font-size: 1.4em;
-}
-
-p {
-	@include screenBreakpoint(desktop) {
-		font-size: 1.2em;
-	}
+	font-size: 1.2em;
 }
 
 // margin

@@ -2,9 +2,9 @@
 @import '../../assets/scss/mixins';
 @import '../../assets/scss/breakpoints';
 
-$defMar: 0.5em;
+.cardServices {
+	$defMar: 0.5em;
 
-.cardComp {
 	padding: $defMar * 2;
 	margin-bottom: 1em;
 	box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
@@ -15,7 +15,7 @@ $defMar: 0.5em;
 	}
 
 	.title {
-		margin-bottom: $defMar * 0.5;
+		margin: $defMar * 0.5 0;
 	}
 
 	.desc {
@@ -27,16 +27,8 @@ $defMar: 0.5em;
 		justify-content: space-between;
 
 		.button {
-			width: 30%;
+			width: 100% !important;
 			text-align: center;
-
-			&:not(:last-child) {
-				margin-right: 1em;
-			}
-
-			@include screenBreakpoint(desktop) {
-				width: 35%;
-			}
 		}
 	}
 }
