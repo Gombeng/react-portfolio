@@ -25,7 +25,7 @@ export default function About() {
 					</p>
 				</div>
 
-				<div className="social-media">
+				{/* <div className="social-media">
 					{urls.map((url) => (
 						<SocialIcon
 							className="icon"
@@ -35,7 +35,7 @@ export default function About() {
 							target="_blank"
 						/>
 					))}
-				</div>
+				</div> */}
 			</div>
 		</div>
 	);

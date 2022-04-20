@@ -6,7 +6,9 @@
 		}
 	}
 
-	.icon:not(:last-child) {
-		margin-right: 2em;
+	.icon {
+		&:not(:last-child) {
+			margin-right: 2em;
+		}
 	}
 }
