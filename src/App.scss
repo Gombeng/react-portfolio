@@ -60,6 +60,12 @@ h1 {
 
 h2 {
 	font-size: 1.5em;
+
+	&.title {
+		background: rgba(127, 127, 127, 0.1);
+		width: fit-content;
+		padding: 0.3em 1em;
+	}
 }
 
 h3 {
@@ -69,4 +75,5 @@ h3 {
 // margin
 .title {
 	margin-bottom: 1em;
+	font-weight: bold;
 }

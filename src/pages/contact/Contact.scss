@@ -1,0 +1,36 @@
+@import '../../assets/scss/variables';
+@import '../../assets/scss/mixins';
+@import '../../assets/scss/breakpoints';
+@import '../../assets/scss/colors';
+
+form {
+	& > div {
+		@include flexBoxCol;
+		margin: 0 0 2em;
+	}
+
+	label {
+		align-self: flex-start;
+		font-weight: 600;
+
+		&:not(:last-child) {
+			margin-bottom: 0.5em;
+		}
+	}
+
+	input,
+	textarea {
+		width: 80vw;
+		padding: 1em;
+		outline: none;
+		border: 1px solid $Black;
+	}
+	textarea {
+		height: 20vh;
+		resize: none;
+	}
+
+	.button {
+		align-self: flex-start;
+	}
+}

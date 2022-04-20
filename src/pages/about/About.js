@@ -17,7 +17,7 @@ export default function About() {
 				</div>
 
 				<div className="text">
-					<h2>About me</h2>
+					<h2 className="title">About me</h2>
 					<p>
 						Hi, I am Syahrizal Ardana, currently I am studying Informatics
 						engineering. I am interested in various things related to front-end
