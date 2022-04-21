@@ -18,9 +18,12 @@ export default function Contact() {
 			.then(
 				(result) => {
 					console.log(result.text);
+					window.location.reload(false);
+					window.alert('Message Sent :)');
 				},
 				(error) => {
 					console.log(error.text);
+					window.alert('Message not Sent :(');
 				}
 			);
 	};
