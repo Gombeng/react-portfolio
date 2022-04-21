@@ -1,14 +1,7 @@
 import React from 'react';
 import './About.scss';
-import { SocialIcon } from 'react-social-icons';
 
 export default function About() {
-	let urls = [
-		'https://www.linkedin.com/in/syahrizal-ardana-45399a1b1/',
-		'https://facebook.com/MSR.GOMBENG/',
-		'https://www.instagram.com/msr.gombeng/',
-	];
-
 	return (
 		<div id="about" className="container about">
 			<div>
@@ -24,18 +17,6 @@ export default function About() {
 						development
 					</p>
 				</div>
-
-				{/* <div className="social-media">
-					{urls.map((url) => (
-						<SocialIcon
-							className="icon"
-							url={url}
-							style={{ height: 40, width: 40 }}
-							bgColor="#000"
-							target="_blank"
-						/>
-					))}
-				</div> */}
 			</div>
 		</div>
 	);

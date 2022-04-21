@@ -13,7 +13,7 @@ const CardService = (props) => {
 				<p className="desc">{props.desc}</p>
 			</div>
 			<div className="btn-wrapper">
-				<a href="/" className="button" target="_blank">
+				<a href="/contact" className="button">
 					Order Now
 				</a>
 			</div>

@@ -4,32 +4,18 @@ import CardComp from './../../components/card/Card';
 export default function Project() {
 	let works = [
 		{
-			img: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.oWwrp29KmfdHHggrD878awHaEK%26pid%3DApi&f=1',
-			title: 'Sunnyside Landing Page',
-			desc: 'Simple project created using HTML & CSS',
-			demoUrl: 'https://www.instagram.com/msr.gombeng/',
-			repoUrl: 'https://www.instagram.com/msr.gombeng/',
+			img: './images/project/project-personal.png',
+			title: 'Portfolio 2022',
+			desc: 'Portfolio website created using ReactJS',
+			demoUrl: 'https://github.com/Gombeng/',
+			repoUrl: 'https://github.com/Gombeng/react-portfolio',
 		},
 		{
-			img: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.oWwrp29KmfdHHggrD878awHaEK%26pid%3DApi&f=1',
+			img: './images/project/project-personal.png',
 			title: 'Sunnyside Landing Page',
 			desc: 'Simple project created using HTML & CSS',
-			demoUrl: 'https://www.instagram.com/msr.gombeng/',
-			repoUrl: 'https://www.instagram.com/msr.gombeng/',
-		},
-		{
-			img: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.oWwrp29KmfdHHggrD878awHaEK%26pid%3DApi&f=1',
-			title: 'Sunnyside Landing Page',
-			desc: 'Simple project created using HTML & CSS',
-			demoUrl: 'https://www.instagram.com/msr.gombeng/',
-			repoUrl: 'https://www.instagram.com/msr.gombeng/',
-		},
-		{
-			img: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.oWwrp29KmfdHHggrD878awHaEK%26pid%3DApi&f=1',
-			title: 'Sunnyside Landing Page',
-			desc: 'Simple project created using HTML & CSS',
-			demoUrl: 'https://www.instagram.com/msr.gombeng/',
-			repoUrl: 'https://www.instagram.com/msr.gombeng/',
+			demoUrl: 'https://github.com/Gombeng/',
+			repoUrl: 'https://github.com/Gombeng/',
 		},
 	];
 
@@ -49,7 +35,12 @@ export default function Project() {
 			</div>
 
 			<div className="btn-wrapper">
-				<a href="/" className="button" target="_blank">
+				<a
+					href="https://github.com/Gombeng"
+					className="button"
+					target="_blank"
+					rel="noreferrer"
+				>
 					See More
 				</a>
 			</div>

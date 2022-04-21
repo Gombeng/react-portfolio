@@ -4,27 +4,28 @@ import CardService from '../../components/cardService/CardService';
 export const Services = () => {
 	let items = [
 		{
-			src: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.oWwrp29KmfdHHggrD878awHaEK%26pid%3DApi&f=1',
+			src: './images/project/project-personal.png',
+			title: 'Portfolio Website',
+			desc: 'Best for your personal branding',
+		},
+		{
+			src: './images/project/project-personal.png',
 			title: 'Landing Page Website',
 			desc: 'best for your personal branding',
 		},
+
 		{
-			src: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.oWwrp29KmfdHHggrD878awHaEK%26pid%3DApi&f=1',
-			title: 'Portfolio Website',
-			desc: 'best for your personal branding',
-		},
-		{
-			src: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.oWwrp29KmfdHHggrD878awHaEK%26pid%3DApi&f=1',
+			src: './images/project/project-personal.png',
 			title: 'E-commerce Website',
 			desc: 'best for your personal branding',
 		},
 		{
-			src: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.oWwrp29KmfdHHggrD878awHaEK%26pid%3DApi&f=1',
+			src: './images/project/project-personal.png',
 			title: 'Agency Website',
 			desc: 'best for your personal branding',
 		},
 		{
-			src: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.oWwrp29KmfdHHggrD878awHaEK%26pid%3DApi&f=1',
+			src: './images/project/project-personal.png',
 			title: 'School Website',
 			desc: 'best for your personal branding',
 		},
