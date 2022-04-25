@@ -1,5 +1,6 @@
 import React from 'react';
 import './Card.scss';
+import { Button } from '../button/Button.styles';
 
 const CardComp = (props) => {
 	return (
@@ -12,22 +13,24 @@ const CardComp = (props) => {
 				<p className="desc">{[props.desc]}</p>
 			</div>
 			<div className="btn-wrapper">
-				<a
+				<Button
+					as="a"
 					href={props.demoUrl}
 					className="button"
 					target="_blank"
 					rel="noreferrer"
 				>
 					Demo
-				</a>
-				<a
+				</Button>
+				<Button
+					as="a"
 					href={props.repoUrl}
 					className="button"
 					target="_blank"
 					rel="noreferrer"
 				>
 					Repo
-				</a>
+				</Button>
 			</div>
 		</div>
 	);

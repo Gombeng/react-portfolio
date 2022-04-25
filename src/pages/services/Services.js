@@ -11,23 +11,23 @@ export const Services = () => {
 		{
 			src: './images/project/project-personal.png',
 			title: 'Landing Page Website',
-			desc: 'best for your personal branding',
+			desc: 'Best for your personal branding',
 		},
 
 		{
 			src: './images/project/project-personal.png',
 			title: 'E-commerce Website',
-			desc: 'best for your personal branding',
+			desc: 'Best for your personal branding',
 		},
 		{
 			src: './images/project/project-personal.png',
 			title: 'Agency Website',
-			desc: 'best for your personal branding',
+			desc: 'Best for your personal branding',
 		},
 		{
 			src: './images/project/project-personal.png',
 			title: 'School Website',
-			desc: 'best for your personal branding',
+			desc: 'Best for your personal branding',
 		},
 	];
 

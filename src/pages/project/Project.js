@@ -7,7 +7,7 @@ export default function Project() {
 			img: './images/project/project-personal.png',
 			title: 'Portfolio 2022',
 			desc: 'Portfolio website created using React JS',
-			demoUrl: 'https://github.com/Gombeng/',
+			demoUrl: 'https://github.com/Gombeng/react-portfolio',
 			repoUrl: 'https://github.com/Gombeng/react-portfolio',
 		},
 		{

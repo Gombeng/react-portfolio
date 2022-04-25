@@ -26,10 +26,6 @@ body {
 	@include flexBoxCol;
 	justify-content: center;
 	padding: 5vh 10vw;
-
-	@include screenBreakpoint(phone) {
-		// text-align: center;
-	}
 }
 
 // element

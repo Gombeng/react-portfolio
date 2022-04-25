@@ -1,9 +1,11 @@
 import React from 'react';
 import './About.scss';
 
+import Container from '../../components/layout/Container';
+
 export default function About() {
 	return (
-		<div id="about" className="container about">
+		<Container className="about">
 			<div>
 				<div className="img">
 					<img src="./images/profil.png" alt="My Profile" />
@@ -18,6 +20,6 @@ export default function About() {
 					</p>
 				</div>
 			</div>
-		</div>
+		</Container>
 	);
 }

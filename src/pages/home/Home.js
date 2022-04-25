@@ -1,13 +1,15 @@
 import React from 'react';
 import './Home.scss';
+import Container from '../../components/layout/Container';
+import { Button } from '../../components/button/Button.styles';
 
 export default function Home() {
 	return (
-		<div className="container home">
+		<Container className="home">
 			<h1>I'm Syahrizal Ardana</h1>
 			<p>Front-end Developer</p>
 
-			<button>Download CV</button>
-		</div>
+			<Button>Download CV</Button>
+		</Container>
 	);
 }
