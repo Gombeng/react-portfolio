@@ -1,5 +1,6 @@
 import React from 'react';
 import CardService from '../../components/cardService/CardService';
+import './Service.scss';
 
 export const Services = () => {
 	let items = [
@@ -14,11 +15,11 @@ export const Services = () => {
 			desc: 'Best for your personal branding',
 		},
 
-		{
-			src: './images/project/project-personal.png',
-			title: 'E-commerce Website',
-			desc: 'Best for your personal branding',
-		},
+		// {
+		// 	src: './images/project/project-personal.png',
+		// 	title: 'E-commerce Website',
+		// 	desc: 'Best for your personal branding',
+		// },
 		{
 			src: './images/project/project-personal.png',
 			title: 'Agency Website',
@@ -32,10 +33,10 @@ export const Services = () => {
 	];
 
 	return (
-		<div className="container services">
-			<h2 className="title">What I am Great at</h2>
+		<div className="container">
+			<h2 className="title mb-2">What I am Great at</h2>
 
-			<div className="wrapper">
+			<div className="service">
 				{items.map((item) => (
 					<CardService src={item.src} title={item.title} desc={item.desc} />
 				))}
