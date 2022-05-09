@@ -3,6 +3,10 @@
 @import '../../assets/scss/breakpoints';
 @import '../../assets/scss/colors';
 
+.contact {
+	width: 100%;
+}
+
 form {
 	& > div {
 		@include flexBoxCol;
@@ -12,10 +16,7 @@ form {
 	label {
 		align-self: flex-start;
 		font-weight: 600;
-
-		&:not(:last-child) {
-			margin-bottom: 0.5em;
-		}
+		margin-bottom: 0.5em;
 	}
 
 	input,
@@ -25,6 +26,7 @@ form {
 		outline: none;
 		border: 1px solid $Black;
 	}
+
 	textarea {
 		height: 20vh;
 		resize: none;
@@ -32,5 +34,33 @@ form {
 
 	.button {
 		align-self: flex-start;
+	}
+
+	@include screenBreakpoint(tablet) {
+		& > div {
+			margin: 0 0 0.8em;
+		}
+
+		display: grid;
+		gap: 1.5rem;
+		grid-template-areas: 'name email' 'message message' 'send send';
+
+		input {
+			width: calc(40vw - 12px);
+			justify-content: flex-start;
+		}
+
+		.item-1 {
+			grid-area: name;
+		}
+		.item-2 {
+			grid-area: email;
+		}
+		.item-3 {
+			grid-area: message;
+		}
+		.item-4 {
+			grid-area: send;
+		}
 	}
 }
