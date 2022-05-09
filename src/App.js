@@ -17,14 +17,12 @@ function App() {
 		<div className="App">
 			<Navbar />
 			<Routes>
-				{/* <Switch> */}
 				<Route path="/" element={<Home />} />
 				<Route path="about" element={<About />} />
 				<Route path="work" element={<Project />} />
 				<Route path="services" element={<Services />} />
 				<Route path="contact" element={<Contact />} />
 				<Route path="*" element={<Notfound />} />
-				{/* </Switch> */}
 			</Routes>
 		</div>
 	);

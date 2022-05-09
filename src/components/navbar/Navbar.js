@@ -1,13 +1,6 @@
 import React, { useState } from 'react';
 import './Navbar.scss';
 import { Link } from 'react-router-dom';
-import { SocialIcon } from 'react-social-icons';
-
-let urls = [
-	'https://www.linkedin.com/in/syahrizal-ardana-45399a1b1/',
-	'https://facebook.com/MSR.GOMBENG/',
-	'https://www.instagram.com/msr.gombeng/',
-];
 
 const Navbar = () => {
 	const [click, setClick] = useState(false);
@@ -84,17 +77,6 @@ const Navbar = () => {
 					</ul>
 				</div>
 			</nav>
-			{/* <div className="social">
-				{urls.map((url) => (
-					<SocialIcon
-						className="icon menu-item"
-						url={url}
-						style={{ height: 40, width: 40 }}
-						bgColor="#000"
-						target="_blank"
-					/>
-				))}
-			</div> */}
 		</>
 	);
 };
