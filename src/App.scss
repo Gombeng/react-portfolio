@@ -22,8 +22,8 @@ body {
 }
 
 .container {
-	min-height: 90vh;
 	@include flexBoxCol;
+	min-height: 90vh;
 	justify-content: center;
 	padding: 5vh 10vw;
 }
@@ -58,9 +58,9 @@ h2 {
 	font-size: 1.5em;
 
 	&.title {
-		background: rgba(127, 127, 127, 0.1);
+		background: rgb(216, 216, 216);
 		width: fit-content;
-		padding: 0.3em 1em;
+		padding: 0.8em 1.3em;
 	}
 }
 

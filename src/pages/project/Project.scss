@@ -1,0 +1,11 @@
+@import '../../assets/scss/variables';
+@import '../../assets/scss/breakpoints';
+
+.project {
+	@include screenBreakpoint(tablet) {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 2em;
+		place-items: center;
+	}
+}

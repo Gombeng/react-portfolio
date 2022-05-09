@@ -5,14 +5,14 @@ import { Button } from '../button/Button.styles';
 const CardComp = (props) => {
 	return (
 		<div className="cardComp">
-			<div className="img">
+			<div className="cardComp__img">
 				<img src={props.img} alt="" />
 			</div>
-			<div className="text-wrapper">
+			<div className="cardComp__text">
 				<h3 className="title">{props.title}</h3>
 				<p className="desc">{[props.desc]}</p>
 			</div>
-			<div className="btn-wrapper">
+			<div className="cardComp__btn">
 				<Button
 					as="a"
 					href={props.demoUrl}
