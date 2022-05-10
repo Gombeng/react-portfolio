@@ -8,7 +8,7 @@ export default function Project() {
 			img: './images/project/project-personal.png',
 			title: 'Portfolio 2022',
 			desc: 'Portfolio website created using React JS',
-			demoUrl: 'https://github.com/Gombeng/react-portfolio',
+			demoUrl: 'https://gombeng-portfolio.netlify.app/',
 			repoUrl: 'https://github.com/Gombeng/react-portfolio',
 		},
 		{
@@ -17,20 +17,6 @@ export default function Project() {
 			desc: 'Landing page Created using Angular JS',
 			demoUrl: 'https://gombeng-lp-inforsys.netlify.app/',
 			repoUrl: 'https://github.com/Gombeng/inforsys',
-		},
-		{
-			img: './images/project/project-business.png',
-			title: 'Inforsys Landing Page',
-			desc: 'Landing page Created using Angular JS',
-			demoUrl: 'https://gombeng-lp-inforsys.netlify.app/',
-			repoUrl: 'https://github.com/Gombeng/inforsys',
-		},
-		{
-			img: './images/project/project-personal.png',
-			title: 'Portfolio 2022',
-			desc: 'Portfolio website created using React JS',
-			demoUrl: 'https://github.com/Gombeng/react-portfolio',
-			repoUrl: 'https://github.com/Gombeng/react-portfolio',
 		},
 	];
 

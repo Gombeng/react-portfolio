@@ -59,13 +59,10 @@
 		padding: 1em 5em;
 		transition: $halfSec;
 
-		&:hover {
+		&:hover,
+		&.active {
 			background: $Black;
 			color: $White;
-		}
-
-		&.active {
-			background: #000;
 		}
 
 		@include screenBreakpoint(tablet) {
