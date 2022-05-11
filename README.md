@@ -40,11 +40,13 @@ List the ready features here:
 
 ## Screenshots
 
-Desktop version
+**Desktop version**
+<br/>
 <br/>
 ![Example screenshot](./img/portfolio-desktop.png)
 
-Mobile version
+**Mobile version**
+<br/>
 <br/>
 ![Example screenshot](./img/portfolio-mobile.png)
 
