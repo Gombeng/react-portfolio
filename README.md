@@ -8,15 +8,15 @@
 <!-- - [General Info](#general-information) -->
 
 - [Technologies Used](#technologies-used)
-<!-- - [Features](#features) -->
 - [Screenshots](#screenshots)
+- [Contact](#contact)
+- [Copyright](#copyright)
+  <!-- - [Features](#features) -->
   <!-- - [Setup](#setup) -->
   <!-- - [Usage](#usage) -->
   <!-- - [Project Status](#project-status) -->
   <!-- - [Room for Improvement](#room-for-improvement) -->
   <!-- - [Acknowledgements](#acknowledgements) -->
-- [Contact](#contact)
-- [Copyright](#copyright)
 
 <!-- ## General Information
 
@@ -40,10 +40,12 @@ List the ready features here:
 
 ## Screenshots
 
-Desktop verion
+Desktop version
+<br/>
 ![Example screenshot](./img/portfolio-desktop.png)
 
-Mobile verion
+Mobile version
+<br/>
 ![Example screenshot](./img/portfolio-mobile.png)
 
 <!-- If you have screenshots you'd like to share, include them here. -->
