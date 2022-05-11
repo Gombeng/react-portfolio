@@ -8,13 +8,13 @@
 <!-- - [General Info](#general-information) -->
 
 - [Technologies Used](#technologies-used)
-<!-- * [Features](#features) -->
+<!-- - [Features](#features) -->
 - [Screenshots](#screenshots)
-  <!-- * [Setup](#setup) -->
-  <!-- * [Usage](#usage) -->
-  <!-- * [Project Status](#project-status) -->
-  <!-- * [Room for Improvement](#room-for-improvement) -->
-  <!-- * [Acknowledgements](#acknowledgements) -->
+  <!-- - [Setup](#setup) -->
+  <!-- - [Usage](#usage) -->
+  <!-- - [Project Status](#project-status) -->
+  <!-- - [Room for Improvement](#room-for-improvement) -->
+  <!-- - [Acknowledgements](#acknowledgements) -->
 - [Contact](#contact)
 - [Copyright](#copyright)
 
@@ -40,7 +40,10 @@ List the ready features here:
 
 ## Screenshots
 
+Desktop verion
 ![Example screenshot](./img/portfolio-desktop.png)
+
+Mobile verion
 ![Example screenshot](./img/portfolio-mobile.png)
 
 <!-- If you have screenshots you'd like to share, include them here. -->
