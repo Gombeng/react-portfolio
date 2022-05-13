@@ -1,7 +1,7 @@
 # Syahrizal Portfolio
 
 > Simple portfolio made using ReactJS
-> Live demo [_here_](https://gombeng-portfolio.netlify.app/). <!-- If you have the project hosted somewhere, include the link here. -->
+> Live demo [_here_](https://syahrizal-portfolio.web.app/). <!-- If you have the project hosted somewhere, include the link here. -->
 
 ## Table of Contents
 
