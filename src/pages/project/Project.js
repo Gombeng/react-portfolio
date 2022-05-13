@@ -1,8 +1,11 @@
 import React from 'react';
 import CardComp from './../../components/card/Card';
 import './Project.scss';
+import { tabTitle } from './../../components/GeneralFunc';
 
 export default function Project() {
+	tabTitle('Work | Syahrizal Ardana');
+
 	let works = [
 		{
 			img: './images/project/project-personal.png',

@@ -1,8 +1,8 @@
 import React from 'react';
 import './About.scss';
-
 import Container from '../../components/layout/Container';
 import { SocialIcon } from 'react-social-icons';
+import { tabTitle } from './../../components/GeneralFunc';
 
 let urls = [
 	'https://www.linkedin.com/in/syahrizal-ardana-45399a1b1/',
@@ -11,6 +11,7 @@ let urls = [
 ];
 
 export default function About() {
+	tabTitle('About | Syahrizal Ardana');
 	return (
 		<Container>
 			<div className="about">
@@ -26,9 +27,9 @@ export default function About() {
 						development
 					</p>
 
-					<p>Found me in social media</p>
-
 					<div className="social">
+						<p>Found me in social media</p>
+
 						{urls.map((url) => (
 							<SocialIcon
 								className="icon menu-item"

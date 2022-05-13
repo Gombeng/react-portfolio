@@ -1,8 +1,11 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import './Contact.scss';
+import { tabTitle } from './../../components/GeneralFunc';
 
 export default function Contact() {
+	tabTitle('Contact | Syahrizal Ardana');
+
 	const form = useRef();
 
 	const sendEmail = (e) => {
