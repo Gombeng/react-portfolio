@@ -11,7 +11,14 @@ export default function Home() {
 			<h1>I'm Syahrizal Ardana</h1>
 			<p>Front-end Developer</p>
 
-			<Button>Download CV</Button>
+			<Button
+				as="a"
+				href="https://drive.google.com/file/d/1FbUFv6eX6a28Ky_I1V0sEq-xgCbyJbJn/view?usp=sharing"
+				target="_blank"
+				rel="noreferrer"
+			>
+				Download CV
+			</Button>
 		</Container>
 	);
 }

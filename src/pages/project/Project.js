@@ -9,9 +9,9 @@ export default function Project() {
 	let works = [
 		{
 			img: './images/project/project-personal.png',
-			title: 'Portfolio 2022',
+			title: 'React Portfolio',
 			desc: 'Portfolio website created using React JS',
-			demoUrl: 'https://gombeng-portfolio.netlify.app/',
+			demoUrl: 'https://syahrizal-portfolio.web.app/',
 			repoUrl: 'https://github.com/Gombeng/react-portfolio',
 		},
 		{
