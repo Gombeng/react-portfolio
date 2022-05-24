@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Navbar.scss';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
 	const [click, setClick] = useState(false);
@@ -10,9 +10,9 @@ const Navbar = () => {
 		<>
 			<nav className="nav">
 				<div className="nav__container">
-					<Link exact to="/" className="nav--logo">
+					<NavLink exact to="/" className="nav--logo">
 						Ardn
-					</Link>
+					</NavLink>
 
 					<div className="nav--icon" onClick={handleClick}>
 						<i className={click ? 'fas fa-times' : 'fas fa-bars'}></i>
@@ -20,7 +20,7 @@ const Navbar = () => {
 
 					<ul className={click ? 'nav--menu active' : 'nav--menu'}>
 						<li className="nav--item">
-							<Link
+							<NavLink
 								exact
 								to="/"
 								activeClassName="active"
@@ -28,10 +28,10 @@ const Navbar = () => {
 								onClick={handleClick}
 							>
 								Home
-							</Link>
+							</NavLink>
 						</li>
 						<li className="nav--item">
-							<Link
+							<NavLink
 								exact
 								to="/about"
 								activeClassName="active"
@@ -39,10 +39,10 @@ const Navbar = () => {
 								onClick={handleClick}
 							>
 								About
-							</Link>
+							</NavLink>
 						</li>
 						<li className="nav--item">
-							<Link
+							<NavLink
 								exact
 								to="/work"
 								activeClassName="active"
@@ -50,10 +50,10 @@ const Navbar = () => {
 								onClick={handleClick}
 							>
 								Work
-							</Link>
+							</NavLink>
 						</li>
 						<li className="nav--item">
-							<Link
+							<NavLink
 								exact
 								to="/services"
 								activeClassName="active"
@@ -61,10 +61,10 @@ const Navbar = () => {
 								onClick={handleClick}
 							>
 								Services
-							</Link>
+							</NavLink>
 						</li>
 						<li className="nav--item">
-							<Link
+							<NavLink
 								exact
 								to="/contact"
 								activeClassName="active"
@@ -72,7 +72,7 @@ const Navbar = () => {
 								onClick={handleClick}
 							>
 								Contact
-							</Link>
+							</NavLink>
 						</li>
 					</ul>
 				</div>
