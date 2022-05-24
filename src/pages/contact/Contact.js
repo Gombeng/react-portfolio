@@ -37,17 +37,31 @@ export default function Contact() {
 			<form ref={form} onSubmit={sendEmail}>
 				<div className="item-1">
 					<label>Full Name</label>
-					<input type="text" name="from_name" required />
+					<input
+						type="text"
+						name="from_name"
+						placeholder="Syahrizal Ardana"
+						required
+					/>
 				</div>
 
 				<div className="item-2">
 					<label>Email</label>
-					<input type="email" name="from_email" required />
+					<input
+						type="email"
+						name="from_email"
+						placeholder="syahrizalardana@gmail.com"
+						required
+					/>
 				</div>
 
 				<div className="item-3">
 					<label>Message</label>
-					<textarea name="message" required />
+					<textarea
+						name="message"
+						placeholder="hello friends bla bla bla..."
+						required
+					/>
 				</div>
 				<div className="item-4">
 					<input className="button" type="submit" value="Send" />
