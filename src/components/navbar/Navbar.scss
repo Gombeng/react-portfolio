@@ -56,13 +56,14 @@
 
 	&--links {
 		color: $Black;
+		border-bottom: 2px solid $White;
 		padding: 1em 5em;
 		transition: $halfSec;
 
 		&:hover,
 		&.active {
-			background: $Black;
-			color: $White;
+			border-bottom: 2px solid $Black;
+			font-weight: 600;
 		}
 
 		@include screenBreakpoint(tablet) {
