@@ -13,7 +13,7 @@ export const Services = () => {
 			desc: 'Best for your personal branding',
 		},
 		{
-			src: './images/project/project-personal.png',
+			src: './images/project/project-business.png',
 			title: 'Landing Page Website',
 			desc: 'Best for your personal branding',
 		},
