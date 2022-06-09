@@ -8,6 +8,9 @@ export default function Notfound() {
 	return (
 		<Container>
 			<h1 className="title">Page not Found</h1>
+			<a href="/" className="button">
+				Back to Home
+			</a>
 		</Container>
 	);
 }
