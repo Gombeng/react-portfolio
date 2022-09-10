@@ -1,6 +1,6 @@
 import React from 'react';
 import Container from '../../components/layout/Container';
-import { tabTitle } from './../../components/GeneralFunc';
+import { tabTitle } from '../../utils/GeneralFunc';
 
 export default function Notfound() {
 	tabTitle('Not Found | Syahrizal Ardana');

@@ -1,6 +1,6 @@
 import React from 'react';
 import './Card.scss';
-import { Button } from '../button/Button.styles';
+import Button from '../Button';
 
 const CardComp = (props) => {
 	return (

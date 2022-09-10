@@ -1,7 +1,7 @@
 import React from 'react';
 import CardComp from './../../components/card/Card';
 import './Project.scss';
-import { tabTitle } from './../../components/GeneralFunc';
+import { tabTitle } from '../../utils/GeneralFunc';
 
 export default function Project() {
 	tabTitle('Work | Syahrizal Ardana');

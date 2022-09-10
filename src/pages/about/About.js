@@ -1,8 +1,8 @@
 import React from 'react';
 import './About.scss';
 import Container from '../../components/layout/Container';
+import { tabTitle } from '../../utils/GeneralFunc';
 import { SocialIcon } from 'react-social-icons';
-import { tabTitle } from './../../components/GeneralFunc';
 
 let urls = [
 	'https://www.linkedin.com/in/syahrizal-ardana-45399a1b1/',
