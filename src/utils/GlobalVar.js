@@ -1,12 +1,13 @@
-
-export const color = {
+const color = {
 	bg: `#151923`,
 	textOne: `#ffffff`,
 	textSec: `#d0d6f9`,
 };
 
-export const fontfamily = {
+const fontfamily = {
 	barlow: `'Barlow', sans-serif`,
 	barlowCond: `'Barlow Condensed', sans-serif`,
 	bellefair: `'Bellefair', serif`,
 };
+
+export { color, fontfamily };

@@ -5,6 +5,15 @@ import { device } from '../utils/Device';
 import { color } from '../utils/GlobalVar';
 import { IconClose, IconMenu, Logo } from '../assets/assets';
 
+import { SocialIcon } from 'react-social-icons';
+
+let urls = [
+	'https://www.linkedin.com/in/syahrizal-ardana-45399a1b1/',
+	'https://www.github.com/Gombeng/',
+	// 'https://facebook.com/MSR.GOMBENG/',
+	// 'https://www.instagram.com/msr.gombeng/',
+];
+
 const Navbar = () => {
 	const [click, setClick] = useState(false);
 	const handleClick = () => setClick(!click);
@@ -14,6 +23,18 @@ const Navbar = () => {
 			<NavLink to="/" className="nav-logo">
 				<img src={Logo} alt="Logo" />
 			</NavLink>
+
+			<div>
+				{urls.map((url) => (
+					<SocialIcon
+						className="social"
+						url={url}
+						style={{ height: 30, width: 30 }}
+						bgColor={color.textSec}
+						target="_blank"
+					/>
+				))}
+			</div>
 
 			<div className="nav-icon">
 				<img
@@ -41,21 +62,13 @@ const Navbar = () => {
 					WORK
 				</NavLink>
 				{/* <NavLink
-					to="/services"
-					className={({ isActive }) => (isActive ? 'link active' : 'link')}
-					onClick={handleClick}
-				>
-					<span>02</span>
-					SERVICES
-				</NavLink> */}
-				<NavLink
 					to="/about"
 					className={({ isActive }) => (isActive ? 'link active' : 'link')}
 					onClick={handleClick}
 				>
 					<span>03</span>
 					ABOUT
-				</NavLink>
+				</NavLink> */}
 				<NavLink
 					to="/contact"
 					className={({ isActive }) => (isActive ? 'link active' : 'link')}
@@ -80,6 +93,12 @@ const Container = styled.div`
 	/* max-width: 1600px;
 	margin: 0 auto; */
 	text-align: left;
+
+	.social {
+		&:not(:last-child) {
+			margin-right: 1rem;
+		}
+	}
 
 	@media ${device.mobilemax} {
 		padding: 20px 24px;

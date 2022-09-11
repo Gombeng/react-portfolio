@@ -1,11 +1,11 @@
 import Logo from './icon/logo.png';
-import IconMenu from './shared/icon-hamburger.svg';
-import IconClose from './shared/icon-close.svg';
-// import BgImageHomeMobile from './home/background-home-mobile.jpg';
-// import BgImageHomeTablet from './home/background-home-tablet.jpg';
-// import BgImageHomeDesktop from './home/background-home-desktop.jpg';
-import BgImageHome from './images/bg-home3.png';
-import ImageProfil from './images/profil.png';
+import IconMenu from './icon/icon-hamburger.svg';
+import IconClose from './icon/icon-close.svg';
+import BgImageContact from './images/bg-contact.jpg';
+import BgImageWorkD from './images/bg-work-d.jpg';
+import BgImageHome from './images/bg-home.webp';
+import ImageProfil from './images/profil.webp';
+import ImageWork from './images/project-personal.png';
 
 export {
 	Logo,
@@ -13,7 +13,7 @@ export {
 	IconClose,
 	BgImageHome,
 	ImageProfil,
-	// BgImageHomeMobile,
-	// BgImageHomeTablet,
-	// BgImageHomeDesktop,
+	BgImageWorkD,
+	ImageWork,
+	BgImageContact,
 };

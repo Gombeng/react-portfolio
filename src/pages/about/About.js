@@ -1,14 +1,9 @@
 import React from 'react';
 import './About.scss';
-import Container from '../../components/layout/Container';
 import { tabTitle } from '../../utils/GeneralFunc';
 import { SocialIcon } from 'react-social-icons';
+import styled from 'styled-components';
 
-let urls = [
-	'https://www.linkedin.com/in/syahrizal-ardana-45399a1b1/',
-	'https://facebook.com/MSR.GOMBENG/',
-	'https://www.instagram.com/msr.gombeng/',
-];
 
 export default function About() {
 	tabTitle('About | Syahrizal Ardana');
@@ -27,21 +22,19 @@ export default function About() {
 						development
 					</p>
 
-					<div className="social">
-						<p>Found me in social media</p>
-
-						{urls.map((url) => (
-							<SocialIcon
-								className="icon menu-item"
-								url={url}
-								style={{ height: 40, width: 40 }}
-								bgColor="#000"
-								target="_blank"
-							/>
-						))}
-					</div>
 				</div>
 			</div>
 		</Container>
 	);
 }
+
+const Container = styled.div`
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	min-height: 90vh;
+	justify-content: center;
+	padding: 5vh 10vw;
+`

@@ -52,14 +52,22 @@ const GlobalStyle = createGlobalStyle`
     }
 
     h2 {
-        font-size: 100px;
+        font-size: 38px;
+
+        @media ${device.tablet} { 
+            font-size: 56px;
+        }
+
+        @media ${device.laptop} { 
+            font-size: 100px;
+        }
     }
 
     h3 {
-        font-size: 26px;
+        font-size: 28px;
 
         @media ${device.tablet} { 
-            font-size: 36px;
+            font-size: 38px;
         }
 
         @media ${device.laptop} { 
@@ -68,15 +76,14 @@ const GlobalStyle = createGlobalStyle`
     }
 
     h4 {
-        font-size: 24px;
+        font-size: 22px;
         
         @media ${device.tablet} { 
             font-size: 28px;
         }
 
         @media ${device.laptop} { 
-        font-size: 32px;
-            font-size: 28px;
+            font-size: 32px;
         }
     }
 
@@ -144,6 +151,18 @@ const GlobalStyle = createGlobalStyle`
 
     .mb-1 {
         margin-bottom: 1rem;
+    }
+
+    .mb-2 {
+        margin-bottom: 2rem;
+    }
+
+    .mt-1 {
+        margin-top: 1rem;
+    }
+
+    .mt-2 {
+        margin-top: 2rem;
     }
 
     .mr-half {
