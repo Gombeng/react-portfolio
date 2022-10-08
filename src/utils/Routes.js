@@ -5,7 +5,14 @@ import {
 	Route,
 } from 'react-router-dom';
 import Navbar from '../components/Navbar';
-import { About, Contact, Home, Notfound, Project, Services } from '../pages/Pages';
+import {
+	About,
+	Contact,
+	Home,
+	Notfound,
+	Projects,
+	Services,
+} from '../pages/Pages';
 
 const Routes = () => {
 	return (
@@ -15,7 +22,8 @@ const Routes = () => {
 				<Route index element={<Home />} />
 				<Route path="/" element={<Home />} />
 				<Route path="about" element={<About />} />
-				<Route path="work" element={<Project />} />
+				<Route path="works" element={<Projects />} />
+				{/* <Route exact path="work/:id" element={<Detail />} /> */}
 				<Route path="services" element={<Services />} />
 				<Route path="contact" element={<Contact />} />
 				<Route path="*" element={<Notfound />} />

@@ -54,7 +54,7 @@ const Navbar = () => {
 					HOME
 				</NavLink>
 				<NavLink
-					to="/work"
+					to="/works"
 					className={({ isActive }) => (isActive ? 'link active' : 'link')}
 					onClick={handleClick}
 				>

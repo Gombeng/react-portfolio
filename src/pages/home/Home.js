@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { BgImageHome, ImageProfil } from '../../assets/assets';
 import Button from '../../components/Button';
+import { BgImageHome, ImageProfil } from '../../assets/assets';
 import { device, tabTitle, color } from '../../utils/Utils';
 
 export default function Home() {
@@ -16,7 +16,7 @@ export default function Home() {
 			</div>
 
 			<div className="right">
-				<h4 className="mb-half">シャフリザル・アルダナ</h4>
+				<h5 className="mb-half">シャフリザル・アルダナ</h5>
 				<h3 className="mb-half">Hi! I'm Syahrizal Ardana</h3>
 				<p style={{ marginBottom: '2.5rem' }}>
 					I've been a Front-end Developer enthusiast since 2019. I do love
@@ -64,7 +64,7 @@ const Container = styled.div`
 	}
 
 	@media ${device.tablet} {
-		background-position: bottom;
+		background-position: center;
 		flex-direction: row;
 	}
 `;

@@ -1,17 +1,22 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import styled from 'styled-components';
 import Button from '../../components/Button';
 import { color, device, tabTitle } from '../../utils/Utils';
 import { BgImageContact } from '../../assets/assets';
+import { ClipLoader } from 'react-spinners';
 
 export default function Contact() {
 	tabTitle('Contact | Syahrizal Ardana');
+
+	const [loading, setLoading] = useState(false);
 
 	const form = useRef();
 
 	const sendEmail = (e) => {
 		e.preventDefault();
+
+		setLoading(true);
 
 		emailjs
 			.sendForm(
@@ -22,12 +27,14 @@ export default function Contact() {
 			)
 			.then(
 				(result) => {
-					console.log(result.text);
+					// console.log(result.text);
 					window.location.reload(false);
+					setLoading(false);
 					window.alert('Message Sent :)');
 				},
 				(error) => {
-					console.log(error.text);
+					// console.log(error.text);
+					setLoading(false);
 					window.alert('Message not Sent :(');
 				}
 			);
@@ -38,38 +45,32 @@ export default function Contact() {
 			<h5 className="mb-2 abs">04 _ MAIL ME A GOOD NEWS</h5>
 
 			<div>
-				<div className="left">
-					<p>
-						tse tet Lorem ipsum dolor sit amet consectetur adipisicing elit.
-						Corporis delectus fugit itaque perferendis nihil. Eum reiciendis
-						laborum cum quod explicabo.
-					</p>
-				</div>
+				<form ref={form} onSubmit={sendEmail}>
+					<label>Full Name</label>
+					<input
+						type="text"
+						name="from_name"
+						placeholder="Your name..."
+						required
+					/>
 
-				<div className="right">
-					<form ref={form} onSubmit={sendEmail}>
-						<label>Full Name</label>
-						<input
-							type="text"
-							name="from_name"
-							placeholder="Syahrizal Ardana"
-							required
-						/>
+					<label>Email</label>
+					<input
+						type="email"
+						name="from_email"
+						placeholder="ur_email@gmail.com"
+						required
+					/>
 
-						<label>Email</label>
-						<input
-							type="email"
-							name="from_email"
-							placeholder="syahrizalardana@gmail.com"
-							required
-						/>
-
-						<label>Message</label>
-						<textarea
-							name="message"
-							placeholder="hello friends bla bla bla..."
-							required
-						/>
+					<label>Message</label>
+					<textarea
+						name="message"
+						placeholder="Words you wanna say..."
+						required
+					/>
+					{loading ? (
+						<ClipLoader className="mt-1" color="#fff" size={32} />
+					) : (
 						<Button
 							className="mt-1"
 							title="Send"
@@ -77,8 +78,8 @@ export default function Contact() {
 							color={color.bg}
 							bgColor={color.textSec}
 						/>
-					</form>
-				</div>
+					)}
+				</form>
 			</div>
 		</Container>
 	);
@@ -89,7 +90,7 @@ const Container = styled.div`
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	padding: 1rem;
+	padding-top: 10vh;
 
 	width: 100%;
 	min-height: 100vh;
@@ -104,10 +105,9 @@ const Container = styled.div`
 
 	form {
 		display: flex;
-		align-items: flex-start;
+		align-items: center;
 		flex-direction: column;
 		justify-content: center;
-		text-align: left !important;
 		max-width: 300px;
 
 		label {
@@ -117,11 +117,15 @@ const Container = styled.div`
 		input,
 		textarea {
 			all: unset;
-			width: 300px;
 			border-radius: 0.3rem;
 			padding: 1em;
 			background-color: ${color.bg};
 			border: 1px solid ${color.textOne};
+
+			width: 250px;
+			@media ${device.tablet} {
+				width: 400px;
+			}
 		}
 	}
 
