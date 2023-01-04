@@ -28,7 +28,7 @@ export default function Home() {
 					color={color.bg}
 					bgColor={color.textSec}
 					as="a"
-					href="https://drive.google.com/file/d/1FbUFv6eX6a28Ky_I1V0sEq-xgCbyJbJn/view?usp=sharing"
+					href="https://drive.google.com/file/d/13uL2NZ9gVVz29y8J1EMNBuFhvTp0dnAV/view?usp=sharing"
 					target="_blank"
 					rel="noreferrer"
 				/>
