@@ -1,25 +1,44 @@
 import React from 'react';
 import Card from '../../components/Card';
 import styled from 'styled-components';
-import { BgImageWorkD, ImageWork } from '../../assets';
-import { color, device, tabTitle } from '../../utils/Utils';
+import { BgImageWorkD, ImageWork1, ImageWork2, ImageWork3, ImageWork4, ImageWork5 } from '../../assets';
+import { device, tabTitle } from '../../utils/Utils';
 
 const works = [
 	{
-		to: '/',
-		img: `${ImageWork}`,
+		img: `${ImageWork1}`,
 		title: 'React Portfolio',
-		desc: 'Portfolio website created using React JS  reprehenderit maxime nisi modi, dolore nulla magnam velit asperiores?',
+		desc: 'Portfolio website created using React JS',
 		demoUrl: 'https://syahrizal-portfolio.web.app/',
 		repoUrl: null,
 	},
 	{
-		to: '/',
-		img: `${ImageWork}`,
-		title: 'React Portfolio',
-		desc: 'Portfolio website created using React JS  reprehenderit maxime nisi modi, dolore nulla magnam velit asperiores?',
-		demoUrl: 'https://syahrizal-portfolio.web.app/',
-		repoUrl: 'https://github.com/Gombeng/react-portfolio',
+		img: `${ImageWork2}`,
+		title: 'Rest Country API',
+		desc: 'Website to search all the information about country all over the world!',
+		repoUrl: 'https://github.com/Gombeng/Rest-Country-API',
+		demoUrl: 'https://rest-country-api-six.vercel.app/',
+	},
+	{
+		img: `${ImageWork3}`,
+		title: 'Denote',
+		desc: 'Application to save your brilian idea, don\'t forget to signup first',
+		repoUrl: 'https://github.com/Gombeng/denote-mern',
+		demoUrl: 'https://denote-mern.vercel.app/signup',
+	},
+	{
+		img: `${ImageWork4}`,
+		title: 'Kitteni',
+		desc: 'Website contain all the cute cat around the world, you can see the detail too',
+		repoUrl: 'https://github.com/Gombeng/kitteni',
+		demoUrl: 'https://kitteni.vercel.app/',
+	},
+	{
+		img: `${ImageWork5}`,
+		title: 'Easely Quiz',
+		desc: 'Play some quick quiz game to test your inteligence',
+		repoUrl: 'https://github.com/Gombeng/easely-quiz',
+		demoUrl: 'https://easely-quiz.vercel.app/',
 	},
 ];
 

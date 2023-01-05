@@ -27,6 +27,7 @@ const Card = ({ img, title, desc, demoUrl, repoUrl, ...rest }) => {
 					/>
 					<Button
 						as="a"
+						className="ml-1"
 						color={color.bg}
 						bgColor={color.textSec}
 						href={repoUrl}
@@ -43,11 +44,28 @@ const Card = ({ img, title, desc, demoUrl, repoUrl, ...rest }) => {
 export default Card;
 
 const CardContainer = styled.div`
+	text-align: center;
 	min-height: 60vh;
 
-	img {
+	&:not(:last-child) {
+		margin-bottom: 5rem;
+	}
+
+	.img {
 		width: 100%;
 		border-radius: 0.3rem;
+		background-color: #d0d6f9;
+		margin: 0 auto;
+
+		img {
+			padding: 0.3rem;
+			border-radius: 0.3rem;
+			width: 100%;
+		}
+		
+	 @media ${device.laptop} {
+		width: 50%;
+	 }
 	}
 
 	.text {
@@ -55,31 +73,16 @@ const CardContainer = styled.div`
 
 		.desc {
 			max-width: 480px;
+			margin: 0 auto;
 		}
 	}
 
 	.btn {
 		margin-top: 1.5rem;
 
-		&:last-child(2) {
+		.ml-1 {
 			margin-left: 1rem;
 		}
 	}
 
-	@media ${device.tabletmax} {
-		text-align: center;
-	}
-	@media ${device.tablet} {
-		min-height: 80vh;
-	}
-
-	@media ${device.laptop} {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-
-		.left {
-			margin: 0 2rem;
-		}
-	}
 `;
