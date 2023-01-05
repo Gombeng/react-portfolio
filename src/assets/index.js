@@ -5,7 +5,7 @@ import BgImageContact from './images/bg-contact.jpg';
 import BgImageWorkD from './images/bg-work-d.jpg';
 import BgImageHome from './images/bg-home.webp';
 import ImageProfil from './images/profil.webp';
-import ImageWork1 from './images/project-personal.png';
+import ImageWork1 from './images/project-porto.png';
 import ImageWork2 from './images/project-restcapi.png';
 import ImageWork3 from './images/project-denote.png';
 import ImageWork4 from './images/project-kitteni.png';
