@@ -46,9 +46,12 @@ export default Card;
 const CardContainer = styled.div`
 	text-align: center;
 	min-height: 60vh;
+	margin-bottom: 2rem;
 
-	&:not(:last-child) {
-		margin-bottom: 5rem;
+	@media ${device.laptop} {
+		&:not(:last-child) {
+			margin-bottom: 8rem;
+		}
 	}
 
 	.img {
@@ -62,10 +65,10 @@ const CardContainer = styled.div`
 			border-radius: 0.3rem;
 			width: 100%;
 		}
-		
-	 @media ${device.laptop} {
-		width: 50%;
-	 }
+
+		@media ${device.laptop} {
+			width: 50%;
+		}
 	}
 
 	.text {
@@ -84,5 +87,4 @@ const CardContainer = styled.div`
 			margin-left: 1rem;
 		}
 	}
-
 `;
