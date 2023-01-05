@@ -46,9 +46,9 @@ export default Card;
 const CardContainer = styled.div`
 	text-align: center;
 	min-height: 60vh;
-	
+
 	&:not(:last-child) {
-			margin-bottom: 1rem;
+			margin-bottom: -2rem;
 	}
 
 	@media ${device.laptop} {
