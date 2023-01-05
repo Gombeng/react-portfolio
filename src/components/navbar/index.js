@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { device } from '../../utils/Device';
 import { color } from '../../utils/GlobalVar';
-import { IconClose, IconMenu, Logo } from '../../assets/assets';
+import { IconClose, IconMenu, Logo } from '../../assets';
 
 import { SocialIcon } from 'react-social-icons';
 import { Container } from './Navbar.styled';

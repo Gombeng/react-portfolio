@@ -17,25 +17,10 @@ body {
 	font-size: 16px;
 }
 
-.container {
-	@include flexBoxCol;
-	min-height: 90vh;
-	justify-content: center;
-	padding: 5vh 10vw;
-}
-
-// element
-
 img {
 	width: 100%;
 }
 
-button,
-.button {
-	all: unset;
-	@include cta;
-	transition: $halfSec;
-}
 
 li {
 	list-style-type: none;

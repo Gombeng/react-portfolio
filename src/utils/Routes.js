@@ -10,7 +10,7 @@ import {
 	Contact,
 	Home,
 	Notfound,
-	Projects,
+	Works,
 	Services,
 } from '../pages/Pages';
 
@@ -22,7 +22,7 @@ const Routes = () => {
 				<Route index element={<Home />} />
 				<Route path="/" element={<Home />} />
 				<Route path="about" element={<About />} />
-				<Route path="works" element={<Projects />} />
+				<Route path="works" element={<Works />} />
 				{/* <Route exact path="work/:id" element={<Detail />} /> */}
 				<Route path="services" element={<Services />} />
 				<Route path="contact" element={<Contact />} />

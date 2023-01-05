@@ -3,7 +3,7 @@ import Button from './Button';
 import styled from 'styled-components';
 import { color, device } from '../utils/Utils';
 
-const Card = ({ img, title, desc, demoUrl, ...rest }) => {
+const Card = ({ img, title, desc, demoUrl, repoUrl, ...rest }) => {
 	return (
 		<CardContainer {...rest}>
 			<div className="img left">
@@ -24,6 +24,15 @@ const Card = ({ img, title, desc, demoUrl, ...rest }) => {
 						target="_blank"
 						rel="noreferrer"
 						title="Demo"
+					/>
+					<Button
+						as="a"
+						color={color.bg}
+						bgColor={color.textSec}
+						href={repoUrl}
+						// target="_blank"
+						// rel="noreferrer"
+						title="Repo"
 					/>
 				</div>
 			</div>
@@ -51,6 +60,10 @@ const CardContainer = styled.div`
 
 	.btn {
 		margin-top: 1.5rem;
+
+		&:last-child(2) {
+			margin-left: 1rem;
+		}
 	}
 
 	@media ${device.tabletmax} {

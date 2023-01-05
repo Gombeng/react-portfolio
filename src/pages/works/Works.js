@@ -1,7 +1,7 @@
 import React from 'react';
 import Card from '../../components/Card';
 import styled from 'styled-components';
-import { BgImageWorkD, ImageWork } from '../../assets/assets';
+import { BgImageWorkD, ImageWork } from '../../assets';
 import { color, device, tabTitle } from '../../utils/Utils';
 
 const works = [
@@ -11,7 +11,7 @@ const works = [
 		title: 'React Portfolio',
 		desc: 'Portfolio website created using React JS  reprehenderit maxime nisi modi, dolore nulla magnam velit asperiores?',
 		demoUrl: 'https://syahrizal-portfolio.web.app/',
-		repoUrl: 'https://github.com/Gombeng/react-portfolio',
+		repoUrl: null,
 	},
 	{
 		to: '/',
@@ -23,7 +23,7 @@ const works = [
 	},
 ];
 
-const Projects = () => {
+const Works = () => {
 	tabTitle('Work | Syahrizal Ardana');
 
 	return (
@@ -38,7 +38,7 @@ const Projects = () => {
 						title={work.title}
 						desc={work.desc}
 						demoUrl={work.demoUrl}
-						repoUrl={work.repoUrl}
+						repoUrl={work.repoUrl === null ? 'Not found' : work.repoUrl}
 					/>
 				))}
 			</div>
@@ -46,7 +46,7 @@ const Projects = () => {
 	);
 };
 
-export default Projects;
+export default Works;
 
 const Container = styled.div`
 	display: flex;
@@ -58,46 +58,8 @@ const Container = styled.div`
 	min-height: 100vh;
 	background-image: url(${BgImageWorkD});
 	background-repeat: no-repeat;
-	background-position: fixed;
+	background-attachment: fixed;
 	background-size: cover;
-
-	.nav-menu {
-		display: flex;
-
-		@media ${device.tabletmax} {
-			justify-content: center;
-			margin: 2rem 0;
-		}
-
-		@media ${device.laptop} {
-			margin-bottom: 1rem;
-			flex-direction: column;
-			position: fixed;
-			top: 35%;
-			left: 5%;
-		}
-	}
-
-	.link {
-		padding: 1rem;
-		width: fit-content;
-		border: 1px solid white;
-		border-radius: 0.3rem;
-
-		&:not(:last-child) {
-			margin-right: 1.5rem;
-			@media ${device.laptop} {
-				margin-bottom: 1.5rem;
-			}
-		}
-
-		&:hover,
-		&.active {
-			color: ${color.bg};
-			background-color: ${color.textOne};
-			font-weight: bold;
-		}
-	}
 
 	.abs {
 		@media ${device.tablet} {

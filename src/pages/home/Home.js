@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Button from '../../components/Button';
-import { BgImageHome, ImageProfil } from '../../assets/assets';
+import { BgImageHome, ImageProfil } from '../../assets';
 import { device, tabTitle, color } from '../../utils/Utils';
 
 export default function Home() {

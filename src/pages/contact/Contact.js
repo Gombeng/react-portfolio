@@ -3,7 +3,7 @@ import emailjs from '@emailjs/browser';
 import styled from 'styled-components';
 import Button from '../../components/Button';
 import { color, device, tabTitle } from '../../utils/Utils';
-import { BgImageContact } from '../../assets/assets';
+import { BgImageContact } from '../../assets';
 import { ClipLoader } from 'react-spinners';
 
 export default function Contact() {
