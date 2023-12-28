@@ -18,6 +18,7 @@ export default function Home() {
 			<div className="right">
 				<h5 className="mb-half">シャフリザル・アルダナ</h5>
 				<h3 className="mb-half">Hi! I'm Syahrizal Ardana</h3>
+				<h5 style={{marginBottom: '1rem'}}>Front End Developer at AIA Singapore</h5>
 				<p style={{ marginBottom: '2.5rem' }}>
 					I've been a Front-end Developer enthusiast since 2019. I do love
 					implementing stunning UI design onto my project.
@@ -28,7 +29,7 @@ export default function Home() {
 					color={color.bg}
 					bgColor={color.textSec}
 					as="a"
-					href="https://drive.google.com/file/d/13uL2NZ9gVVz29y8J1EMNBuFhvTp0dnAV/view?usp=sharing"
+					href="https://drive.google.com/file/d/1zjNg5mecsFNshnk7DKAa283P3jEwhb64/view?usp=sharing"
 					target="_blank"
 					rel="noreferrer"
 				/>
