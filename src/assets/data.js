@@ -11,6 +11,13 @@ export const data = {
   },
   works: [
     {
+      img: require("./images/project-moviedb.png"),
+      title: "Movie DB",
+      desc: "Movie DB website create using ViteJS",
+      demoUrl: "https://movie-db-lake.vercel.app/",
+      repoUrl: "https://github.com/Gombeng/movie-db",
+    },
+    {
       img: require("./images/project-inforsys-indonesia.png"),
       title: "Inforsys Indonesia",
       desc: "Landing page website create using AngularJS",
