@@ -10,7 +10,7 @@ export const data = {
     position: "Front End Developer",
     location: "AIA Singapore",
     desc: "I've been a Front-end Developer enthusiast since 2019. I do love implementing stunning UI design onto my project. This website created to present all of my works, enjoy!",
-    profileImg: require("./images/profil.webp"),
+    profileImg: require("./images/profile.webp"),
   },
   works: [
     {
