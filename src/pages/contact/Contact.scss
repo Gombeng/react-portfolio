@@ -1,0 +1,66 @@
+@import '../../assets/scss/variables';
+@import '../../assets/scss/mixins';
+@import '../../assets/scss/breakpoints';
+@import '../../assets/scss/colors';
+
+.contact {
+	width: 100%;
+}
+
+form {
+	& > div {
+		@include flexBoxCol;
+		margin: 0 0 2em;
+	}
+
+	label {
+		align-self: flex-start;
+		font-weight: 600;
+		margin-bottom: 0.5em;
+	}
+
+	input,
+	textarea {
+		width: 80vw;
+		padding: 1em;
+		outline: none;
+		border: 1px solid $Black;
+	}
+
+	textarea {
+		height: 20vh;
+		resize: none;
+	}
+
+	.button {
+		align-self: flex-start;
+	}
+
+	@include screenBreakpoint(tablet) {
+		& > div {
+			margin: 0 0 0.8em;
+		}
+
+		display: grid;
+		gap: 1.5rem;
+		grid-template-areas: 'name email' 'message message' 'send send';
+
+		input {
+			width: calc(40vw - 12px);
+			justify-content: flex-start;
+		}
+
+		.item-1 {
+			grid-area: name;
+		}
+		.item-2 {
+			grid-area: email;
+		}
+		.item-3 {
+			grid-area: message;
+		}
+		.item-4 {
+			grid-area: send;
+		}
+	}
+}

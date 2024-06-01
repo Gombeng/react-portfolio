@@ -1,0 +1,71 @@
+// global styling
+@import './assets/scss/variables';
+@import './assets/scss/mixins';
+@import './assets/scss/colors';
+@import './assets/scss/breakpoints';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+	@include resetHtml;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: $font-body;
+	font-size: 16px;
+}
+
+img {
+	width: 100%;
+}
+
+
+li {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+// font
+h1 {
+	font-size: 1.8em;
+}
+
+h2 {
+	font-size: 1.5em;
+
+	&.title {
+		background: rgb(216, 216, 216);
+		width: fit-content;
+		padding: 0.8em 1.3em;
+	}
+}
+
+h3 {
+	font-size: 1.2em;
+}
+
+p {
+	font-size: 0.9em;
+}
+
+// margin
+.title {
+	margin-bottom: 0.5em;
+	font-weight: bold;
+}
+
+.mb-1 {
+	margin-bottom: 1em;
+}
+
+.mb-2 {
+	margin-bottom: 2em;
+}
