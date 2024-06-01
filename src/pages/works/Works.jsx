@@ -13,10 +13,7 @@ const Works = () => {
     <Container>
       <h5 className="abs mb-2">01 _ RECENT WORKS</h5>
       <div className="mb-2 project">
-        <div className=" bg-slate-200">
-          <h1 className="red">Hello world!</h1>
-        </div>
-        {/* {works.map((work) => (
+        {works.map((work) => (
           <Card
             className="mb-2"
             img={work.img}
@@ -25,7 +22,7 @@ const Works = () => {
             demoUrl={work.demoUrl}
             repoUrl={work.repoUrl === null ? "Not found" : work.repoUrl}
           />
-        ))} */}
+        ))}
       </div>
     </Container>
   );
@@ -41,9 +38,7 @@ const Container = styled.div`
   padding: 0 10%;
   padding-top: 20vh;
   min-height: 100vh;
-  color: black;
-  background-color: #9c9c9c;
-  ${"" /* background-image: url(${BgImageWorkD}); */}
+  background-image: url(${BgImageWorkD});
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;

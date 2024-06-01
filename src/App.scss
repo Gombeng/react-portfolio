@@ -3,9 +3,6 @@
 @import './assets/scss/mixins';
 @import './assets/scss/colors';
 @import './assets/scss/breakpoints';
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 * {
 	@include resetHtml;
