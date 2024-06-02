@@ -1,5 +1,5 @@
 # Syahrizal Portfolio
-
+## ***Using TailwindCSS***
 > Simple portfolio made using ReactJS
 > Live demo [_here_](https://syahrizal-portfolio.vercel.app/).
 
