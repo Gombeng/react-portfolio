@@ -138,3 +138,34 @@
 //     }
 //   }
 // `;
+
+import { useNavigate } from "react-router-dom";
+import { Button, Container, Heading } from "../components";
+import { tabTitle } from "../utils";
+
+export default function Contact() {
+  tabTitle("Contact | Syahrizal Ardana");
+  const navigate = useNavigate();
+
+  return (
+    <Container>
+      <div>
+        <Heading className={"text-2xl sm:text-4xl md:text-6xl mb-2"}>
+          -- PAGE UNDER CONSTRUCTION --
+        </Heading>
+        <Heading className={"text-xl sm:text-4xl md:text-6xl mb-8"}>
+          -- WILL BE FINISH SOON! --
+        </Heading>
+
+        <Button
+          onClick={() => {
+            navigate("/");
+            console.log("click");
+          }}
+        >
+          Go Back Home
+        </Button>
+      </div>
+    </Container>
+  );
+}

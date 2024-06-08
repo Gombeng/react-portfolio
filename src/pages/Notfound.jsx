@@ -1,7 +1,7 @@
-import { tabTitle } from "../../utils";
 import { useNavigate } from "react-router-dom";
-import Button from "./../../components/Button";
-import { Container, Heading } from "../../components";
+
+import { tabTitle } from "../utils";
+import { Container, Heading, Button } from "../components";
 
 const Notfound = () => {
   tabTitle("Not Found | Syahrizal Ardana");

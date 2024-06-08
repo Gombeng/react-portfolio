@@ -1,8 +1,8 @@
-import About from "./about/About";
-// import Contact from "./contact/Contact";
+import About from "./About";
+import Contact from "./Contact";
 import Home from "./Home";
-import Notfound from "./notfound/Notfound";
-import Works from "./works/Works";
-import { Services } from "./services/Services";
+import Notfound from "./Notfound";
+import Works from "./Works";
+import { Services } from "./Services";
 
-export { Home, About, Works, Notfound, Services };
+export { Home, About, Works, Notfound, Contact, Services };

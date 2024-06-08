@@ -1,6 +1,6 @@
-import { Button, Container, Heading } from "../../components";
-import { tabTitle } from "../../utils";
-import data from "./../../assets/data";
+import { Button, Container, Heading } from "../components";
+import { tabTitle } from "../utils";
+import data from "../assets/data";
 
 const Works = () => {
   tabTitle("Work | Syahrizal Ardana");
