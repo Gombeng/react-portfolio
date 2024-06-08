@@ -11,6 +11,7 @@ const Routes = () => {
     <Router>
       <Navbar />
       <Switch>
+        <Route index element={<Home />} />
         <Route path="/" element={<Home />} />
         <Route path="works" element={<Works />} />
         <Route path="about" element={<About />} />
