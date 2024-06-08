@@ -14,6 +14,40 @@ const data = {
   },
   works: [
     {
+      title: (
+        <>
+          Personal Web Portfolio <br />
+          (this web lol)
+        </>
+      ),
+      desc: "My personal website to showcases all of my projects, at first this web using CRA & styled components, migrating to vite now.",
+      repoUrl: `${urlGithub}/react-portfolio`,
+      demoUrl: "https://syahrizal-portfolio.vercel.app/",
+      techStack: [
+        "react",
+        "sass",
+        "reactrouter",
+        "eslint",
+        "tailwindcss",
+        "vitejs",
+        "javascript",
+      ],
+      images: [
+        {
+          name: "Desktop",
+          url: `${projectPath}/porto/desktop.png`,
+        },
+        {
+          name: "Tablet",
+          url: `${projectPath}/porto/tablet.png`,
+        },
+        {
+          name: "Mobile",
+          url: `${projectPath}/porto/mobile.png`,
+        },
+      ],
+    },
+    {
       title: "Explore the world",
       desc: "Website to search all the information about country all over the world!",
       repoUrl: `${urlGithub}/fm-rest-countries-api`,
