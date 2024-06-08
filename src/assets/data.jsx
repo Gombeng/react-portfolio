@@ -14,6 +14,35 @@ const data = {
   },
   works: [
     {
+      title: "Denote",
+      desc: "Pour all your briliant idea to a note, so you can execute later. Actually this is my first Fullstack project that I build when in college",
+      repoUrl: `${urlGithub}/fe-denote`,
+      demoUrl: "https://denote-mern.vercel.app/",
+      techStack: [
+        "react",
+        "express",
+        "mongoose",
+        "mongodb",
+        "nodejs",
+        "javascript",
+        "nodemon",
+      ],
+      images: [
+        {
+          name: "Desktop",
+          url: `${projectPath}/denote/desktop.png`,
+        },
+        {
+          name: "Tablet",
+          url: `${projectPath}/denote/tablet.png`,
+        },
+        {
+          name: "Mobile",
+          url: `${projectPath}/denote/mobile.png`,
+        },
+      ],
+    },
+    {
       title: (
         <>
           Personal Web Portfolio <br />
