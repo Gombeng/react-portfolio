@@ -1,7 +1,7 @@
 import React from 'react';
 import CardService from '../../components/cardService/CardService';
 import './Service.scss';
-import { tabTitle } from '../../utils/GeneralFunc';
+import { tabTitle } from '../../utils';
 
 export const Services = () => {
 	tabTitle('Services | Syahrizal Ardana');

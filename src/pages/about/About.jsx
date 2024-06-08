@@ -1,6 +1,6 @@
 import React from 'react';
 import './About.scss';
-import { tabTitle } from '../../utils/GeneralFunc';
+import { tabTitle } from '../../utils';
 import { SocialIcon } from 'react-social-icons';
 import styled from 'styled-components';
 
