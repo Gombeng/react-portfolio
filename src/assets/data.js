@@ -1,9 +1,5 @@
 const urlGithub = "https://github.com/Gombeng";
-const projectPath = "/src/assets/images/projects";
-
-const loadImage = (path) => {
-  return new URL(path, import.meta.url).href;
-};
+const projectPath = "/images/projects";
 
 const data = {
   home: {
@@ -14,7 +10,7 @@ const data = {
     position: "Front End Developer",
     location: "AIA Singapore",
     desc: "I've been a Front-end Developer enthusiast since 2019. I do love implementing stunning UI design onto my project. This website created to present all of my works, enjoy!",
-    profileImg: loadImage("./images/profile.webp"),
+    profileImg: "./images/profile.webp",
   },
   works: [
     {
@@ -33,15 +29,15 @@ const data = {
       images: [
         {
           name: "Desktop",
-          url: loadImage(`${projectPath}/country/desktop.png`),
+          url: `${projectPath}/country/desktop.png`,
         },
         {
           name: "Tablet",
-          url: loadImage(`${projectPath}/country/tablet.png`),
+          url: `${projectPath}/country/tablet.png`,
         },
         {
           name: "Mobile",
-          url: loadImage(`${projectPath}/country/mobile.png`),
+          url: `${projectPath}/country/mobile.png`,
         },
       ],
     },
@@ -54,15 +50,15 @@ const data = {
       images: [
         {
           name: "Desktop",
-          url: loadImage(`${projectPath}/gis/desktop.png`),
+          url: `${projectPath}/gis/desktop.png`,
         },
         {
           name: "Tablet",
-          url: loadImage(`${projectPath}/gis/tablet.png`),
+          url: `${projectPath}/gis/tablet.png`,
         },
         {
           name: "Mobile",
-          url: loadImage(`${projectPath}/gis/mobile.png`),
+          url: `${projectPath}/gis/mobile.png`,
         },
       ],
     },
