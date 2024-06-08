@@ -1,5 +1,5 @@
 const urlGithub = "https://github.com/Gombeng";
-const projectPath = "./images/projects";
+const projectPath = "/src/assets/images/projects";
 
 const loadImage = (path) => {
   return new URL(path, import.meta.url).href;

@@ -8,10 +8,12 @@ const Works = () => {
 
   return (
     <Container
-      className={"gap-5 md:gap-10 lg:gap-16 pt-40 sm:pt-40 md:pt-40 lg:pt-48"}
+      className={"gap-5 md:gap-10 lg:gap-16 pt-32 sm:pt-40 md:pt-40 lg:pt-48"}
     >
       <div>
-        <Heading className={"text-5xl font-semibold"}>All of my works</Heading>
+        <Heading className={"text-4xl md:text-5xl font-semibold"}>
+          All of my works
+        </Heading>
         <p>*fun facts: Adjust screen size to see different image.</p>
       </div>
       {works.map((work, idx) => (
@@ -49,9 +51,7 @@ const Works = () => {
               <p className="mb-2">Tech Stack:</p>
               <div
                 className={`flex gap-3 mb-5 max-w-80 flex-wrap justify-center ${
-                  idx % 2 === 0
-                    ? "md:justify-end"
-                    : "md:justify-start"
+                  idx % 2 === 0 ? "md:justify-end" : "md:justify-start"
                 }`}
               >
                 {work.techStack.map((tech, idx) => (
