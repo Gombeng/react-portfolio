@@ -1,170 +1,141 @@
-// import React, { useRef, useState } from "react";
-// import emailjs from "@emailjs/browser";
-// import styled from "styled-components";
-// import Button from "../../components/Button";
-// import { color, device, tabTitle } from "../../utils";
-// import { BgImageContact } from "../../assets";
-// import { ClipLoader } from "react-spinners";
+import { useState } from "react";
+import emailjs from "@emailjs/browser";
 
-// export default function Contact() {
-//   tabTitle("Contact | Syahrizal Ardana");
-
-//   const [loading, setLoading] = useState(false);
-
-//   const form = useRef();
-
-//   const sendEmail = (e) => {
-//     e.preventDefault();
-
-//     setLoading(true);
-
-//     emailjs
-//       .sendForm(
-//         "service_mz5p7v8",
-//         "template_9j7j9wg",
-//         form.current,
-//         "TSrqJgWyQXrCKyvqy"
-//       )
-//       .then(
-//         (result) => {
-//           // console.log(result.text);
-//           window.location.reload(false);
-//           setLoading(false);
-//           window.alert("Message Sent :)");
-//         },
-//         (error) => {
-//           // console.log(error.text);
-//           setLoading(false);
-//           window.alert("Message not Sent :(");
-//         }
-//       );
-//   };
-
-//   return (
-//     <Container>
-//       <h5 className="mb-2 abs">02 _ MAIL ME A GOOD NEWS</h5>
-
-//       <div>
-//         <form ref={form} onSubmit={sendEmail}>
-//           <label>Full Name</label>
-//           <input
-//             type="text"
-//             name="from_name"
-//             placeholder="Your name..."
-//             required
-//           />
-
-//           <label>Email</label>
-//           <input
-//             type="email"
-//             name="from_email"
-//             placeholder="ur_email@gmail.com"
-//             required
-//           />
-
-//           <label>Message</label>
-//           <textarea
-//             name="message"
-//             placeholder="Words you wanna say..."
-//             required
-//           />
-//           {loading ? (
-//             <ClipLoader className="mt-1" color="#fff" size={32} />
-//           ) : (
-//             <Button
-//               className="mt-1"
-//               title="Send"
-//               type="submit"
-//               color={color.bg}
-//               bgColor={color.textSec}
-//             />
-//           )}
-//         </form>
-//       </div>
-//     </Container>
-//   );
-// }
-
-// const Container = styled.div`
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   align-items: center;
-//   padding-top: 10vh;
-
-//   width: 100%;
-//   min-height: 100vh;
-//   background-image: url(${BgImageContact});
-//   background-repeat: no-repeat;
-//   background-position: fixed;
-//   background-size: cover;
-
-//   p {
-//     max-width: 400px;
-//   }
-
-//   form {
-//     display: flex;
-//     align-items: center;
-//     flex-direction: column;
-//     justify-content: center;
-//     max-width: 300px;
-
-//     label {
-//       margin: 1rem 0 0.5rem;
-//     }
-
-//     input,
-//     textarea {
-//       all: unset;
-//       border-radius: 0.3rem;
-//       padding: 1em;
-//       background-color: ${color.bg};
-//       border: 1px solid ${color.textOne};
-
-//       width: 250px;
-//       @media ${device.tablet} {
-//         width: 400px;
-//       }
-//     }
-//   }
-
-//   .abs {
-//     @media ${device.tablet} {
-//       position: fixed;
-//       top: 35%;
-//       left: 5%;
-//       writing-mode: tb-rl;
-//     }
-//   }
-// `;
-
-import { useNavigate } from "react-router-dom";
-import { Button, Container, Heading } from "../components";
+import { Button, Container, InputField, Alerts } from "../components";
 import { tabTitle } from "../utils";
 
 export default function Contact() {
   tabTitle("Contact | Syahrizal Ardana");
-  const navigate = useNavigate();
+  const [formErrors, setFormErrors] = useState({});
+  const [isLoading, setIsLoading] = useState(false);
+  const [alertProps, setAlertProps] = useState({
+    type: "",
+    title: "",
+    message: "",
+  });
+  const [formValues, setFormValues] = useState({
+    fullname: "",
+    email: "",
+    message: "",
+  });
+
+  const handleClose = () => {
+    setAlertProps({ type: "", title: "", message: "" });
+  };
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormValues({ ...formValues, [name]: value });
+  };
+
+  const validateForm = () => {
+    const errors = {};
+    if (!formValues.fullname.trim()) {
+      errors.fullname = "Full name is required";
+    }
+    if (!formValues.email.trim()) {
+      errors.email = "Email is required";
+    } else if (!/\S+@\S+\.\S+/.test(formValues.email)) {
+      errors.email = "Email is invalid";
+    }
+    if (!formValues.message.trim()) {
+      errors.message = "Message is required";
+    }
+    setFormErrors(errors);
+    return Object.keys(errors).length === 0;
+  };
+
+  const sendEmail = async (e) => {
+    e.preventDefault();
+
+    if (!validateForm()) {
+      return;
+    }
+
+    setIsLoading(true);
+    try {
+      await emailjs.sendForm(
+        "service_m36iowf",
+        "template_9j7j9wg",
+        e.target,
+        "GMd4KvIdPndXVCOkx"
+      );
+      setAlertProps({
+        type: "success",
+        title: "Message Sent!",
+        message: "Your message has been sent! We will reply soon, thanks!",
+      });
+      setFormValues({
+        fullname: "",
+        email: "",
+        message: "",
+      });
+    } catch (error) {
+      setAlertProps({
+        type: "error",
+        title: "Server Error!",
+        message:
+          "An error occurred while sending your message. Please try again later.",
+      });
+    } finally {
+      setIsLoading(false);
+      setTimeout(() => {
+        setAlertProps({ type: "", title: "", message: "" });
+      }, 5000);
+    }
+  };
+
+  const fieldProps = [
+    {
+      label: "Full Name",
+      name: "fullname",
+      type: "text",
+      value: formValues.fullname,
+      onChange: handleChange,
+      disabled: isLoading,
+      errors: formErrors,
+      placeholder: "Full Name...",
+    },
+    {
+      label: "Email",
+      name: "email",
+      type: "email",
+      value: formValues.email,
+      onChange: handleChange,
+      disabled: isLoading,
+      errors: formErrors,
+      placeholder: "Email...",
+    },
+    {
+      label: "Messages",
+      name: "message",
+      type: "textarea",
+      value: formValues.message,
+      onChange: handleChange,
+      disabled: isLoading,
+      errors: formErrors,
+      placeholder: "Messages...",
+    },
+  ];
 
   return (
-    <Container>
-      <div>
-        <Heading className={"text-2xl sm:text-4xl md:text-6xl mb-2"}>
-          -- PAGE UNDER CONSTRUCTION --
-        </Heading>
-        <Heading className={"text-xl sm:text-4xl md:text-6xl mb-8"}>
-          -- WILL BE FINISH SOON! --
-        </Heading>
-
-        <Button
-          onClick={() => {
-            navigate("/");
-            console.log("click");
-          }}
+    <Container className={"pt-20 sm:pt-24 md:pt-36 lg:pt-40"}>
+      <Alerts onClose={handleClose} {...alertProps} />
+      <div className="">
+        <form
+          onSubmit={sendEmail}
+          className="space-y-4 rounded-md w-60 md:w-72 lg:w-80"
         >
-          Go Back Home
-        </Button>
+          {fieldProps.map((field, idx) => (
+            <InputField key={idx} {...field} />
+          ))}
+
+          {isLoading ? (
+            "Sending..."
+          ) : (
+            <Button className={`cursor-pointer`}>Send Message</Button>
+          )}
+        </form>
       </div>
     </Container>
   );

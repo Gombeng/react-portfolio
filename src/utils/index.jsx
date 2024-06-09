@@ -18,4 +18,12 @@ const tabTitle = (newTitle) => {
   return (document.title = newTitle);
 };
 
-export { device, tabTitle };
+const fakeApiCall = () => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve({ success: true });
+    }, 1000);
+  });
+};
+
+export { device, tabTitle, fakeApiCall };

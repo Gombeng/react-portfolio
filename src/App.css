@@ -25,38 +25,32 @@ body {
   font-style: normal;
 }
 
-
-/* .wkwk:hover {
-  animation: rotate 0.1s linear infinite;
-}
-
-.bg-color-changing {
-  animation: bg-color-change 1s linear infinite !important;
-}
-
-@keyframes rotate {
+@keyframes slideIn {
   from {
-    transform: rotate(0deg);
+    opacity: 0;
+    transform: translateY(-20px);
   }
   to {
-    transform: rotate(360deg);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
-@keyframes bg-color-change {
-  0% {
-    background-color: #ff0000;
+@keyframes slideOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
   }
-  25% {
-    background-color: #fbff00;
+  to {
+    opacity: 0;
+    transform: translateY(-20px);
   }
-  50% {
-    background-color: #51ff00;
-  }
-  75% {
-    background-color: #002aff;
-  }
-  100% {
-    background-color: #000000;
-  }
-} */
+}
+
+.alert {
+  animation: slideIn 0.5s forwards;
+}
+
+.alert-exit {
+  animation: slideOut 0.5s forwards;
+}
