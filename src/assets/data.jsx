@@ -9,7 +9,7 @@ const data = {
     },
     position: "Front End Developer",
     location: "AIA Singapore",
-    desc: "I've been a Front-end Developer enthusiast since 2019. I do love implementing stunning UI design onto my project. This website created to present all of my works, enjoy!",
+    desc: "I'm a dedicated Front-End Developer with a passion for creating user-friendly web applications since 2019. I specialize in React, which I've been mastering since 2021. Let's build something amazing together!",
     profileImg: "./images/profile.webp",
   },
   works: [
