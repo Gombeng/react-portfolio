@@ -14,6 +14,42 @@ const data = {
   },
   works: [
     {
+      title: "Cashk",
+      desc: (
+        <>
+          Has a slogan "Your money, simplified!" kinda cool tho, I build this
+          app for tracking my personal finances, plus point I can get premium
+          feature for free <br />
+          (ofc need to build it on my own lol)
+        </>
+      ),
+
+      repoUrl: `${urlGithub}/cashk`,
+      demoUrl: "https://cashk.vercel.app/",
+      techStack: [
+        "react",
+        "vitejs",
+        "tailwindcss",
+        "reactrouter",
+        "eslint",
+        "typescript",
+      ],
+      images: [
+        {
+          name: "Desktop",
+          url: `${projectPath}/cashk/desktop.png`,
+        },
+        {
+          name: "Tablet",
+          url: `${projectPath}/cashk/tablet.png`,
+        },
+        {
+          name: "Mobile",
+          url: `${projectPath}/cashk/mobile.png`,
+        },
+      ],
+    },
+    {
       title: "Denote",
       desc: "Pour all your briliant idea to a note, so you can execute later. Actually this is my first Fullstack project that I build when in college",
       repoUrl: `${urlGithub}/fe-denote`,
