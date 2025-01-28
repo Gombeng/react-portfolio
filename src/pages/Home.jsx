@@ -20,11 +20,7 @@ export default function Home() {
         </Heading>
         <p className="max-w-xs sm:max-w-sm lg:max-w-md mb-7">{home.desc}</p>
 
-        <a
-          href="https://drive.google.com/file/d/1gVoVIf0YCZAW462-UAlz5QbePa0I2j4k/view?usp=sharing"
-          target="_blank"
-          rel="noreferrer"
-        >
+        <a href={home.cvurl} target="_blank" rel="noreferrer">
           <Button>Download CV</Button>
         </a>
       </div>

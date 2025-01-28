@@ -11,6 +11,7 @@ const data = {
     location: "AIA Singapore",
     desc: "I'm a dedicated Front-End Developer with a passion for creating user-friendly web applications since 2019. I specialize in React, which I've been mastering since 2021. Let's build something amazing together!",
     profileImg: "./images/profile.webp",
+    cvurl: 'https://drive.google.com/file/d/1nvf9xxu7AgsQiL2Q4CzH8lsHANBQ5s9B/view?usp=sharing'
   },
   works: [
     {
